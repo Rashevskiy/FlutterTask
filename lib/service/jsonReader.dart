@@ -9,7 +9,6 @@ class JsonReader {
   Future<List<BitcoinData>> get bitcoins async {
     List<BitcoinData> _bitcoins = [];
     final res = await http.get(url, headers: {"Accept": "aplication/json"});
-    print('\t<<<<<<<<<<<<<<<<<< 1 >>>>>>>>>>>>>>>>>>>\t');
     final jsonData = json.decode(res.body) as List;
 
     jsonData.forEach((element) {
