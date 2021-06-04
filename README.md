@@ -2,5 +2,4 @@
 
 web project.
 
-Flutter task for United Traders.
 
